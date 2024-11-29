@@ -7,3 +7,5 @@ enable_rate_limiting = true
 su_password = "123"
 password = "123"
 setup_api_tokens = false
+lila_domain = "chessdemo.usthcodersclub.com:8080"
+lila_url = "http://chessdemo.usthcodersclub.com:8080"
