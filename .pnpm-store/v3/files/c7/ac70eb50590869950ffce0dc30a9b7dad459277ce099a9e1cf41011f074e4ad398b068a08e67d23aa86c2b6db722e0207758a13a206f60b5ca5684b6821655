@@ -1,0 +1,25 @@
+{
+    "name": "@types/fnando__sparkline",
+    "version": "0.3.7",
+    "description": "TypeScript definitions for @fnando/sparkline",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fnando__sparkline",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Gábor Balogh",
+            "githubUsername": "grabofus",
+            "url": "https://github.com/grabofus"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/fnando__sparkline"
+    },
+    "scripts": {},
+    "dependencies": {},
+    "typesPublisherContentHash": "b54469355f0e466c1bcbeed01a3a6d63dcce47c76e9ecffb95f3808ba8fda47e",
+    "typeScriptVersion": "4.5"
+}

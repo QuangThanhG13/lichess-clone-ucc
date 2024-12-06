@@ -1,0 +1,9 @@
+compose_profiles = []
+setup_database = true
+setup_bbppairings = false
+mock_email = true
+enable_monitoring = false
+enable_rate_limiting = true
+su_password = "123"
+password = "123"
+setup_api_tokens = false

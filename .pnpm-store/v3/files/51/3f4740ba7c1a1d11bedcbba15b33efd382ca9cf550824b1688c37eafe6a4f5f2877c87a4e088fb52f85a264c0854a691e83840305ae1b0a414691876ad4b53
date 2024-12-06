@@ -1,0 +1,25 @@
+{
+    "name": "@types/dragscroll",
+    "version": "0.0.3",
+    "description": "TypeScript definitions for dragscroll",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/dragscroll",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Sean Kelly",
+            "githubUsername": "spkellydev",
+            "url": "https://github.com/spkellydev"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/dragscroll"
+    },
+    "scripts": {},
+    "dependencies": {},
+    "typesPublisherContentHash": "28bdbdea684dfb16aefc68ab4cc6a809ab8dcc1657331eff5ebed210769952e6",
+    "typeScriptVersion": "4.5"
+}

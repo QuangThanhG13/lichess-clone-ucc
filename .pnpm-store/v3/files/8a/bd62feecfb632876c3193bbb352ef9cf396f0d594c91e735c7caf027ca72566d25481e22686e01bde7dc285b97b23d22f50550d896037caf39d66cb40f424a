@@ -1,0 +1,70 @@
+{
+  "name": "lichess-pgn-viewer",
+  "license": "GPL-3.0-or-later",
+  "version": "2.2.0",
+  "repository": "github:lichess-org/pgn-viewer",
+  "author": "Thibault Duplessis <contact@lichess.org>",
+  "funding": "https://lichess.org/patron",
+  "keywords": [
+    "chess",
+    "lichess",
+    "game",
+    "pgn",
+    "viewer",
+    "typescript"
+  ],
+  "type": "module",
+  "main": "dist/main.js",
+  "types": "main.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "default": "./dist/main.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "dist/*"
+      ]
+    }
+  },
+  "dependencies": {
+    "@types/node": "^22.9.0",
+    "chessground": "^9.1.1",
+    "chessops": "^0.14.1",
+    "snabbdom": "^3.5.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.13.0",
+    "@typescript-eslint/parser": "^8.13.0",
+    "esbuild": "^0.24.0",
+    "eslint": "^9.14.0",
+    "http-server": "^14.1.1",
+    "prettier": "^3.3.3",
+    "sass": "^1.80.6",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  },
+  "files": [
+    "demo/*",
+    "dist/*",
+    "view/*",
+    "scss/*",
+    "src/**/*"
+  ],
+  "scripts": {
+    "compile": "tsc --incremental",
+    "format": "prettier --write --log-level warn .",
+    "bundle": "esbuild src/main.ts --bundle --format=esm --platform=browser",
+    "bundle-dev": "pnpm run bundle --outfile=demo/lichess-pgn-viewer.js",
+    "bundle-prod": "pnpm run bundle --minify --outfile=dist/lichess-pgn-viewer.min.js",
+    "sass-dev": "sass --no-source-map --update --style=expanded scss:demo",
+    "sass-prod": "sass --no-source-map --style=compressed scss:dist",
+    "prod": "pnpm run sass-prod && pnpm run bundle-prod",
+    "demo": "pnpm run sass-dev && pnpm run bundle-dev && http-server demo",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "dist": "pnpm run compile && pnpm run prod && pnpm run sass-dev && pnpm run bundle-dev"
+  }
+}
